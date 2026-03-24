@@ -1,0 +1,27 @@
+{
+  "ravensGames": [
+    {
+      "gameDate": "2023-12-10",
+      "opponent": "Los Angeles Rams",
+      "scoreSummary": "37-31 OT",
+      "imageList": [
+        { "imgName": "Touchdown", "fileName": "images/rams_td.jpg" },
+        { "imgName": "Defense", "fileName": "images/rams_defense.jpg" }
+      ]
+    },
+    {
+      "gameDate": "2023-11-26",
+      "opponent": "Los Angeles Chargers",
+      "scoreSummary": "20-10",
+      "imageList": [
+        { "imgName": "Winning Kick", "fileName": "images/chargers_kick.jpg" }
+      ]
+    },
+    {
+      "gameDate": "",
+      "opponent": "",
+      "scoreSummary": "",
+      "imageList": []
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "playerImg": "images/lamar.jpg",
+    "playerName": "Lamar Jackson",
+    "jerseyNumber": 8,
+    "rating": 97
+  },
+  {
+    "playerImg": "images/mark_andrews.jpg",
+    "playerName": "Mark Andrews",
+    "jerseyNumber": 89,
+    "rating": 93
+  },
+  {
+    "playerImg": "images/roquan.jpg",
+    "playerName": "Roquan Smith",
+    "jerseyNumber": 0,
+    "rating": 95
+  },
+  {
+    "playerImg": "images/zay_flowers.jpg",
+    "playerName": "Zay Flowers",
+    "jerseyNumber": 4,
+    "rating": 89
+  },
+  {
+    "playerImg": "images/justin_tucker.jpg",
+    "playerName": "Justin Tucker",
+    "jerseyNumber": 9,
+    "rating": 99
+  },
+  {
+    "playerImg": "images/marlon_humphrey.jpg",
+    "playerName": "Marlon Humphrey",
+    "jerseyNumber": 44,
+    "rating": 91
+  }
+]

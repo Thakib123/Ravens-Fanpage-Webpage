@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- HTML comments like this... -->
+<html>
+
+<head>
+    <title>Homework CIS 3344 Webpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style/Mymain.css" rel="stylesheet" type="text/css" />
+    <link href="style/dropDown.css" rel="stylesheet" type="text/css" />
+    <link href="style/myDropDown.css" rel="stylesheet" type="text/css" />
+    <link href="style/home.css" rel="stylesheet" type="text/css" />
+    <link href="style/blog.css" rel="stylesheet" type="text/css" />
+    <link href="style/obj.css" rel="stylesheet" type="text/css" />
+    <link href="style/player.css" rel="stylesheet" type="text/css" />
+    <link href="style/slideShow.css" rel="stylesheet" type="text/css" />
+    <link href="style/empList.css" rel="stylesheet" type="text/css" />
+    <link href="style/ravenList.css" rel="stylesheet" type="text/css" />
+    <link href="style/ravensGameList.css" rel="stylesheet" type="text/css" />
+    <link href="style/editArea.css" rel="stylesheet" type="text/css" />
+    <link href="style/crudList.css" rel="stylesheet" type="text/css">
+    <link href="style/MakeRosterR.css" rel="stylesheet" type="text/css" />
+
+
+
+
+    <!-- You need these two CDNs to use react, their version numbers must match -->
+    <!-- changed version on 10-20-2022 from 16.3.1 to 18 for react and react-dom -->
+    <script src='https://unpkg.com/react@18/umd/react.production.min.js'></script>
+    <script src='https://unpkg.com/react-dom@18/umd/react-dom.production.min.js'></script>
+
+    <!-- This CDN lets you use JSX (looks like HTML tags in JS) -->
+    <script src='https://unpkg.com/babel-standalone@6.26.0/babel.js'></script>
+
+    <!-- This CDN lets you use React Routing -->
+    <script src='https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js'></script>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <!-- Put JS reusable first (these are called by CGFs or by the page like the dropDown FW). -->
+    <script src="_JS_reusable/ajax.js"></script>
+    <script src="_JS_reusable/dropDownFW.js"></script>
+    <script src="_JS_reusable/MakePlayer.js"></script>
+    <script src="_JS_reusable/MakeSlideShow.js"></script>
+    <script src="_JS_reusable/MakeRavensList.js"></script>
+    <script src="_JS_reusable/MakeTag.js"></script>
+    <script src="_JS_reusable/MakeEditArea.js"></script>
+    <script src="_JS_reusable/Validate.js"></script>
+    <script src="_JS_reusable/MakeCrudList.js"></script>
+    <script src="_JS_reusable/MakeRadio.js"></script>
+    <script src="_JS_reusable/MakeSelect.js"></script>
+
+
+
+
+    <!-- JS Content Generating functions (these are called by the router). -->
+    <script src="_JS_CGF/CrudList_cgf.js"></script>
+    <script src="_JS_CGF/MakePlayer_CGF.js"></script>
+    <script src="_JS_CGF/TwoEditAreas_CGF.js"></script>
+    <script src="_JS_CGF/GameStatsEditArea_CGF.js"></script>
+    <script src="_JS_CGF/PlayerProfileEditArea_CGF.js"></script>
+    <script type="text/babel" src="_JS_CGF/SlideShow_CGF.js"></script>
+    <script type="text/babel" src="_JS_CGF/MakeRavensList_CGF.js"></script>
+
+
+    <!-- React reusable (these are called by CGFs). -->
+    <script type="text/babel" src="_React_reusable/ConvertEle.js"></script>
+    <script type="text/babel" src="_React_reusable/MakeRosterR.js"></script>
+    <script type="text/babel" src="_React_reusable/MakeRavensGameListR.js"></script>
+
+
+    <!-- React Content Generating functions (these are called by the router) -->
+    <script type="text/babel" src="_React_CGF/BlogR.js"></script>
+    <script type="text/babel" src="_React_CGF/HomeR.js"></script>
+    <script type="text/babel" src="_React_CGF/MakeRosterR_CGF.js"></script>
+    <script type="text/babel" src="_React_CGF/MakeRavensGameList_CGF.js"></script>
+
+
+
+    <!-- Any React scripts (which all have JSX) needs script type="text/babel" -->
+
+
+    <script type="text/babel">
+
+        "use strict";
+
+        dropDownFW({
+            dropHeaderStyle: "dropHeader",
+            dropContentStyle: "dropContent",
+            showStyle: "show",
+            hideStyle: "hide"
+        });
+
+        const Link = ReactRouterDOM.Link;
+        const Route = ReactRouterDOM.Route;
+
+        const App = () => (
+            <ReactRouterDOM.HashRouter>
+
+                <div id="titleNav">
+                    <div id="title">
+                        Ravens Nation
+                    </div>
+                    <div id="nav">
+                        <div class="dropDown">
+                            <Link to="/home">Home</Link>
+                        </div>
+
+                        <div class="dropDown">
+                            <div class="dropHeader">Search-JS</div>
+                            <div class="dropContent">
+                                <Link to="/myObj">Player Objects (Mod 3)</Link> <br />
+                                <Link to="/slideShow">Ravens SlideShow (Mod 5)</Link><br />
+                                <Link to="/empList">Ravens Player List(Mod 6)</Link> <br />
+                                <Link to="/editAreas">Two Edit Areas (Mod 8)</Link> <br />
+                                <Link to="/editableList">Editable List (Mod 9)</Link><br />
+                            </div>
+                        </div>
+
+                        <div class="dropDown">
+                            <div class="dropHeader">Search-React</div>
+                            <div class="dropContent">
+                                <Link to="/ravens-roster">Ravens Roster (Mod 4)</Link> <br /> 
+                                <Link to="/ravens-games">Ravens Games(Mod 7)</Link> <br />                                                       
+                            </div>
+                        </div>
+
+                        <div class="dropDown">
+                            <Link to="/blog">Blog</Link>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content">
+                    <Route path="/" exact component={HomeR} />
+                    <Route path="/home" component={HomeR} />
+                    <Route path="/myObj" component={() => <ConvertEle ele={MakePlayer_CGF()} />} />
+                    <Route path="/blog" component={BlogR} />
+                    <Route path="/ravens-roster" render={() => <MakeRosterR_CGF />} />
+                    <Route path="/slideShow" component={() => <ConvertEle ele={SlideShow_CGF()} />}/>
+                    <Route path="/empList" component={() =><ConvertEle ele={MakeRavensList_CGF()} />}/>
+                    <Route path="/ravens-games" render={() => <MakeRavensGameList_CGF />} />
+                    <Route path="/editAreas" component={() => <ConvertEle ele={TwoEditAreas_CGF()} />} />
+                    <Route path="/editableList" component={() => <ConvertEle ele={CrudList_CGF()} />} />
+                    </div>
+
+                    
+                    <div id="slideShowContainer"></div>
+
+                <div id="footer">
+                    Kib Aroworowon CIS 3344
+                </div>
+
+            </ReactRouterDOM.HashRouter>
+        );
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.ravensGameList {
+  border: 1px solid gold;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.ravensGameList-card {
+  border: 1px solid gold;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  background: rgb(0, 0, 0);
+}
+
+.editSection {
+  margin-top: 1rem;
+}

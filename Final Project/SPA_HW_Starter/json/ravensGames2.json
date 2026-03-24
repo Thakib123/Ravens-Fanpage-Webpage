@@ -1,0 +1,21 @@
+{
+    "games": [
+      {
+        "date": "2022-12-04",
+        "vs": "Denver Broncos",
+        "score": "10-9",
+        "images": [
+          { "imgName": "Field Goal", "fileName": "images/broncos_fg.jpg" }
+        ]
+      },
+      {
+        "date": "2022-11-20",
+        "vs": "Carolina Panthers",
+        "score": "13-3",
+        "images": [
+          { "imgName": "Defense Sack", "fileName": "images/panthers_sack.jpg" }
+        ]
+      }
+    ]
+  }
+  

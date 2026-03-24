@@ -1,0 +1,33 @@
+[
+    {
+        "nickname": "Lamar Hop",
+        "image": "https://cis-linux2.temple.edu/tomcat10/sp25_3344_tuo46790/pics_slideShow/pic1.jpg",
+        "year": "2019"
+    },
+    {
+        "nickname": "Lamar Stiffarm",
+        "image": "https://cis-linux2.temple.edu/tomcat10/sp25_3344_tuo46790/pics_slideShow/pic2.jpg",
+        "year": "2018"
+    },
+    {
+        "nickname": "Lamar Throw",
+        "image": "https://cis-linux2.temple.edu/tomcat10/sp25_3344_tuo46790/pics_slideShow/pic3.jpg",
+        "year": "2020"
+    },
+    {
+        "nickname": "Lamar Flip",
+        "image": "https://cis-linux2.temple.edu/tomcat10/sp25_3344_tuo46790/pics_slideShow/pic4.jpg",
+        "year": "2018"
+        
+    },
+    {
+        "nickname": "Lamar Hurdle",
+        "image": "https://cis-linux2.temple.edu/tomcat10/sp25_3344_tuo46790/pics_slideShow/pic5.jpg",
+        "year": "2017"
+    },
+    {
+        "nickname": "Lamar Cartoon",
+        "image": "https://cis-linux2.temple.edu/tomcat10/sp25_3344_tuo46790/pics_slideShow/pic6.jpg",
+        "year": "2019"
+    }
+]

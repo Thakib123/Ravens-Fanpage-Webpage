@@ -1,0 +1,26 @@
+{
+    "games": [
+        {
+            "date": "2024-10-01",
+            "opponent": "Pittsburgh Steelers",
+            "ravens_touchdowns": 4,
+            "opponent_touchdowns": 2,
+            "image": "https://library.sportingnews.com/styles/crop_style_16_9_desktop/s3/2025-01/Wild%20card%20Ravens-Steelers.jpg?itok=ZbtJP5sU"
+        },
+        {
+            "date": "2024-10-08",
+            "opponent": "Cincinnati Bengals",
+            "ravens_touchdowns": 3,
+            "opponent_touchdowns": 1,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQEHOGxMtn_y2FszI4MAVr5_CJq2iL-XE-HQ&s"
+        },
+        {
+            "date": "2024-10-15",
+            "opponent": "Cleveland Browns",
+            "ravens_touchdowns": 5,
+            "opponent_touchdowns": 3,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwksi7IPYBhuwdY31NXqZvnwHKm564oGEZ8g&s"
+        }
+        
+    ]
+}

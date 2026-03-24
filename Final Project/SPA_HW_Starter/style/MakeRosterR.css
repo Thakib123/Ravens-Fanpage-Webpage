@@ -1,0 +1,57 @@
+.roster-card {
+    border: 2px solid #000;
+    padding: 20px;
+    margin: 40px auto;
+    text-align: center;
+    background-color: #3b0066; /* deep purple for Ravens */
+    color: white;
+    border-radius: 12px;
+    max-width: 350px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+}
+
+.roster-card img {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0 20px 0;
+    border: 2px solid #ffcc00;
+}
+
+.selectImages {
+    margin-top: 10px;
+    padding: 8px;
+    width: 80%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.roster-card button {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 8px 12px;
+    background-color: #ffcc00;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.roster-card button:hover {
+    background-color: #e6b800;
+}
+
+.roster-card:last-of-type {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 600px) {
+    .roster-card {
+        width: 90%;
+    }
+}
