@@ -1,0 +1,119 @@
+/* Main list container */
+/* Whole list container box */
+.ravenList {
+    border: 2px solid #6c757d; /* subtle dark gray border */
+    border-radius: 10px; /* rounded corners */
+    padding: 20px; /* space inside the box */
+    margin: 20px auto; /* space outside the box */
+    max-width: 800px; /* keep it a reasonable width */
+    background-color: #f8f9fa; /* very light gray background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* soft shadow */
+}
+
+
+/* List title */
+.ravenList h2 {
+    margin-bottom: 5px;
+    color: #343a40;
+}
+
+/* List subtitle */
+.ravenList h4 {
+    margin-bottom: 20px;
+}
+
+/* Title input and button */
+.titleInputClass, .sortSelectClass, .titleButtonClass {
+    margin: 10px 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+/* Individual player card */
+.raven {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Player name */
+.playerName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #212529;
+}
+
+/* Player image */
+.playerImage {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0%;
+    margin: 10px 0;
+}
+
+/* Player buttons and inputs */
+.positionButtonClass, .salaryButtonClass {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: #3b0066;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.positionButtonClass:hover, .salaryButtonClass:hover {
+    background-color: #495057;
+}
+
+/* Text inputs for position and salary */
+.newPositionInputClass, .salaryAmountInputClass {
+    width: 80%;
+    margin: 5px 0 10px 0;
+    padding: 5px;
+    font-size: 0.9rem;
+    border: 1px solid #adb5bd;
+    border-radius: 5px;
+}
+/* Player info container */
+.playerInfoClass {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #3b0066;
+    line-height: 1.5;
+}
+
+/* Make player name bigger and bolder (inside playerInfoClass) */
+.playerInfoClass .playerName {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 5px;
+}
+
+/* Make position and salary a little lighter */
+.playerInfoClass p {
+    margin: 3px 0;
+    font-weight: normal;
+}
+/* Group the buttons and inputs under the image */
+.buttonArea {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Make the buttons and inputs a bit more even inside */
+.buttonArea button,
+.buttonArea input {
+    width: 80%;
+    margin: 5px 0;
+}

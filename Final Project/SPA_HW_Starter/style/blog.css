@@ -1,0 +1,35 @@
+.blog {
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 2rem;
+}
+
+.blog h2 {
+    color: rgb(21, 9, 61);
+    margin-top: 1rem;
+}
+
+.blog p {
+    color: rgb(235, 13, 13);
+    padding: .3rem 0rem 0rem;
+    font-family: Arial, sans-serif;
+    line-height: 1;
+}
+
+.blog h1 {
+    color: rgb(21, 9, 61);
+    padding: .3rem 0rem 0rem;
+    margin-bottom: 1rem;
+}
+
+.blog img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 3rem;
+    margin-bottom: 80px;
+}
+@media (max-width: 600px) {
+    .blog img {
+        width: 90%;
+        max-width: 250px;
+    }
+}

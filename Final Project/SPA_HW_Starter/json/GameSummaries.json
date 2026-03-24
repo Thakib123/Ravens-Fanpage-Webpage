@@ -1,0 +1,44 @@
+[
+  {
+    "gameImg": "images/ravens_chiefs.jpg",
+    "opponent": "Chiefs",
+    "result": "Win",
+    "attendance": 70000,
+    "gameDate": "2024-09-10"
+  },
+  {
+    "gameImg": "images/ravens_bengals.jpg",
+    "opponent": "Bengals",
+    "result": "Loss",
+    "attendance": 66500,
+    "gameDate": "2024-09-17"
+  },
+  {
+    "gameImg": "images/ravens_browns.jpg",
+    "opponent": "Browns",
+    "result": "Win",
+    "attendance": 68200,
+    "gameDate": "2024-09-24"
+  },
+  {
+    "gameImg": "images/ravens_steelers.jpg",
+    "opponent": "Steelers",
+    "result": "Loss",
+    "attendance": 70500,
+    "gameDate": "2024-10-01"
+  },
+  {
+    "gameImg": "images/ravens_dolphins.jpg",
+    "opponent": "Dolphins",
+    "result": "Win",
+    "attendance": 69200,
+    "gameDate": "2024-10-08"
+  },
+  {
+    "gameImg": "images/ravens_jets.jpg",
+    "opponent": "Jets",
+    "result": "Win",
+    "attendance": 67800,
+    "gameDate": "2024-10-15"
+  }
+]

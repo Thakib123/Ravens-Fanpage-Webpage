@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+#titleNav {
+    background-color: #000000;
+    color: gold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#title {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#nav a {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none; /* Fixed 'None' to 'none' */
+    white-space: nowrap;
+}
+
+/* Content Styles */
+#content {
+    color: rgb(247, 247, 247);
+    padding: 5rem 1rem 2rem; /* Top padding for fixed header */
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    padding-bottom: 100px;
+}
+
+#content h2 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+#content a {
+    color: #0066cc;
+}
+
+/* Footer Styles */
+#footer {
+    text-align: center;
+    background-color: #000000;
+    color: gold;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex; /* Fixed 'display: center' */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Body Background */
+body {
+    background-color: rgb(36, 19, 95); /* Page background */
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem; /* Added space under image */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    #titleNav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
+
+

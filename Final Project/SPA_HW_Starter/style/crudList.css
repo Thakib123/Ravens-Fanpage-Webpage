@@ -1,0 +1,156 @@
+/* Root styling for the CRUD List wrapper */
+.crudList {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 1000px;
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .crudList h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    color: #060606;
+  }
+  
+  /* Insert Button */
+  .crudList > button {
+    display: block;
+    margin: 1rem auto 2rem auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4B2E83; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .crudList > button:hover {
+    background-color: #540ed7;
+  }
+  
+  /* List of cards */
+  .crudList .listArea {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+  
+  /* Individual Item Card */
+  .crudList .listItem {
+    background-color: #4B2E83;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .crudList .listItem:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .crudList img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  
+  /* Edit and Delete buttons */
+  .crudList .listItem button {
+    margin-right: 0.5rem;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .crudList .listItem button:first-of-type {
+    background-color: #28a745; /* Green */
+    color: white;
+  }
+  
+  .crudList .listItem button:first-of-type:hover {
+    background-color: #218838;
+  }
+  
+  .crudList .listItem button:last-of-type {
+    background-color: #dc3545; /* Red */
+    color: white;
+  }
+  
+  .crudList .listItem button:last-of-type:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive EditArea inside .crudList */
+  .crudList .editArea {
+    background-color: #fbffdb;
+    border: 2px solid #ffcc00;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+  }
+  
+  .crudList .editArea .row label {
+    margin-bottom: 0.8rem;
+    color: #4B2E83
+  }
+  
+  .crudList .editArea .prompt {
+    display: inline-block;
+    min-width: 120px;
+    font-weight: bold;
+  }
+  
+  .crudList .editArea input,
+  .crudList .editArea select {
+    padding: 6px;
+    font-size: 1rem;
+    width: 60%;
+    margin-left: 10px;
+  }
+  
+  .crudList .editArea .error {
+    color: red;
+    margin-left: 10px;
+    font-size: 0.85rem;
+  }
+  
+  .crudList .editArea .saveButtonC,
+  .crudList .editArea .cancelButtonC {
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .crudList .editArea .saveButtonC {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .crudList .editArea .cancelButtonC {
+    background-color: #414141;
+    color: white;
+  }
+  
+  .crudList .editArea .saveButtonC:hover {
+    background-color: #0056b3;
+  }
+  
+  .crudList .editArea .cancelButtonC:hover {
+    background-color: #5a6268;
+  }
+  
+  
